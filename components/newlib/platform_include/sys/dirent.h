@@ -37,6 +37,7 @@ typedef struct {
 struct dirent {
     ino_t d_ino;          /*!< file number */
     uint8_t d_type;     /*!< not defined in POSIX, but present in BSD and Linux */
+    uint32_t size;
 #define DT_UNKNOWN  0
 #define DT_REG      1
 #define DT_DIR      2
